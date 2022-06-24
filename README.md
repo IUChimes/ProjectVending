@@ -85,5 +85,7 @@ Start uvicorn on 5000 port.
  open htmlcov/index.html
  ```
  
+ ## Coverage Preview
+![image](https://user-images.githubusercontent.com/39850379/175528633-5fde492d-2a30-4ba8-a207-a47f17cd76d0.png)
 
 
