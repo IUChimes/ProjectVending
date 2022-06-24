@@ -14,4 +14,15 @@ Forked from: https://github.com/cornflourblue/vue-vuex-registration-login-exampl
 
 * Uses native `fetch` API instead of `axios` library.
 * Everything is based on states
-* Lots of repeating code
+* Lots of duplicate code
+Such as:
+```
+    loginFailure(state) {
+        state.status = {};
+        state.user = null;
+    },
+    logout(state) {
+        state.status = {};
+        state.user = null;
+    },
+```
