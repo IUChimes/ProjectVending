@@ -1,0 +1,32 @@
+
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE users (
+    id    INTEGER, 
+    username text UNIQUE,
+    password text,
+    deposit integer,
+    role text,
+    PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE products (
+    amountAvailable integer,
+    cost integer,
+    productName text,
+    sellerID integer,
+    FOREIGN KEY(sellerID) REFERENCES users(id) ON DELETE CASCADE
+);
+
+.schema
+
+insert into users values (NULL,"johndoe","$2a$04$p29EJ5B2laL/0GmeoLforOHIop2VsfGaspTGpFft.c6WmqZw/uWvq",0,"buyer");
+insert into users values (NULL,"bestseller","$2a$04$F9QUdILE2wVO4u/dvnr.jORc6vdM5KuN.uvw9wuKKqP6pk2voS0im",0,"seller");
+insert into users values (NULL,"competitorseller","$2a$04$OrkXInJMjYPaT0rumo1SP.ny9xUmEnGyyo3ky/uqUh6dyKm5yPqDO",0,"seller");
+
+
+insert into products values (1,60,"Cola",2);
+insert into products values (1,120,"Sprite",2);
+insert into products values (1,5,"Water",2);
+insert into products values (1,300,"Beer",2);
+insert into products values (1,275,"BetterBeer",6);
