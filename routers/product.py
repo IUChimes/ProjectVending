@@ -4,7 +4,7 @@ from models.product import Product,FullProduct
 from models.user import FullUser
 from routers.auth import get_current_user
 
-router = APIRouter(prefix="/api/product",tags=["product"])
+router = APIRouter(prefix="/product",tags=["product"])
 
 def merge_products(result):
     products = []

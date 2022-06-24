@@ -5,7 +5,7 @@ from models.coin import Coin
 from models.product import Purchase
 from models.user import User, FullUser
 
-router = APIRouter(prefix="/api",tags=["vendor"])
+router = APIRouter(tags=["vendor"])
 
 def is_seller(user: User):
     return user.role == "seller"

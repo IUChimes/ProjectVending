@@ -3,7 +3,7 @@ from fastapi import Depends,APIRouter
 from models.user import FullUser, User
 from routers.auth import get_current_user
 
-router = APIRouter(prefix="/api",tags=["user"])
+router = APIRouter(tags=["user"])
 
 @router.get("/user", response_model=FullUser)
 async def get_users(current_user: FullUser = Depends(get_current_user)):
