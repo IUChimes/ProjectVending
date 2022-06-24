@@ -1,5 +1,17 @@
-# vue-vuex-registration-login-example
+Forked from: https://github.com/cornflourblue/vue-vuex-registration-login-example
 
-Vue + Vuex - User Registration and Login Tutorial & Example
+# Notes
 
-To see a demo and further details go to http://jasonwatmore.com/post/2018/07/14/vue-vuex-user-registration-and-login-tutorial-example
+## PROS
+
+* Has mocked JWT based auth
+* Generally tidy structure, although non standard
+* Separate `auth-header` function that includes necessary headers
+* Set up basic router. (Redirect on auth failure)
+
+
+## CONS
+
+* Uses native `fetch` API instead of `axios` library.
+* Everything is based on states
+* Lots of repeating code
