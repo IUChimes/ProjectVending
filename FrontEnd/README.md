@@ -2,6 +2,21 @@ Forked from: https://github.com/cornflourblue/vue-vuex-registration-login-exampl
 
 # Notes
 
+Working features:
+* Login
+* Logout (Redirect only, does not delete JWT token)
+* User Information display
+
+Semi Working:
+* Product Table with `buy` action. Issues with `fetch` API due to wrong datatype being expected at the backend.
+
+Missing features:
+* User Create/Modify/Delete
+* Product View Private/Modify/Delete
+* Deposit
+* Reset
+* Seller View
+
 ## PROS
 
 * Has mocked JWT based auth

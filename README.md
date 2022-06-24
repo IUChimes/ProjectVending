@@ -91,3 +91,6 @@ Start uvicorn on 5000 port.
 ## Postman
 
 Added Postman configuration, for manual testing. (`ProjectVending.postman_collection.json`)
+
+
+:warning: **Use `backend-specific` branch for testing purposes. Currently frontend requires prefixes for proxy requests**
