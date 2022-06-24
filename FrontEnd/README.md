@@ -14,6 +14,7 @@ Forked from: https://github.com/cornflourblue/vue-vuex-registration-login-exampl
 
 * Uses native `fetch` API instead of `axios` library.
 * Everything is based on states
+* Poor proxy setup that requires `/api` prefix.
 * Lots of duplicate code
 Such as:
 ```
